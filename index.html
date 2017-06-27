@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <body>
-<button onclick="myFunction()">Who will read next?</button>
-<input type="number" id="myNumber" />
+<button onclick="myFunction()">Who will present next?</button>
+<!-- <input type="number" id="myNumber" /> -->
 <p id="demo"></p>
 
 <script>
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
+}
+
 function myFunction() {
-	var num = document.getElementById("myNumber").value;
-    document.getElementById("demo").innerHTML = num;
+	// var num = document.getElementById("myNumber").value;
+	var sumName = new Array();
+	sumName[2] = "JN";
+	sumName[3] = "NG";
+	sumName[4] = "RP";
+	sumName[5] = "AK";
+	sumName[6] = "JB";
+	sumName[7] = "RP";
+	sumName[8] = "JN";
+	sumName[9] = "NG";
+	sumName[10] = "RP";
+	sumName[11] = "AK";
+	sumName[12] = "JB";
+
+	var num = getRandomIntInclusive(2, 12);
+
+    document.getElementById("demo").innerHTML = sumName[num];
 }
 </script>
 
