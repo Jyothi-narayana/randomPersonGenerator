@@ -1,1 +1,16 @@
-Hello world
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="myFunction()">Who will read next?</button>
+<input type="number" id="myNumber" />
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+	var num = document.getElementById("myNumber").value;
+    document.getElementById("demo").innerHTML = num;
+}
+</script>
+
+</body>
+</html>
