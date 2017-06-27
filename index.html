@@ -10,11 +10,11 @@
 <body>
 <div class="wrapper">
 	<button onclick="myFunction()">Who will present next?</button>
+	<input type="number" id="myNumber" placeholder="roll dice"/>
 	<marquee bgcolor="yellow" behavior="alternate">
 		<p id="demo"></p>
 	</marquee>
 </div>
-<!-- <input type="number" id="myNumber" /> -->
 <script>
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
@@ -23,7 +23,7 @@ function getRandomIntInclusive(min, max) {
 }
 
 function myFunction() {
-	// var num = document.getElementById("myNumber").value;
+	var num = document.getElementById("myNumber").value;
 	var sumName = new Array();
 	sumName[2] = "JN";
 	sumName[3] = "NG";
@@ -37,7 +37,7 @@ function myFunction() {
 	sumName[11] = "AK";
 	sumName[12] = "JB";
 
-	var num = getRandomIntInclusive(2, 12);
+	// var num = getRandomIntInclusive(2, 12);
 
     document.getElementById("demo").innerHTML = sumName[num];
 }
