@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<style type="text/css">
+		.wrapper {
+		    text-align: center;
+		}
+	</style>
+</head>
 <body>
-<button onclick="myFunction()">Who will present next?</button>
-<!-- <input type="number" id="myNumber" /> -->
-<!-- <p id="demo"></p> -->
-<div class="text-effect">
-  <!-- Select the text in the preview and type in your own -->
-  <h1 class="neon" id="demo" contenteditable>Neon</h1>
-  <div class="gradient"></div>
-  <div class="spotlight"></div>
+<div class="wrapper">
+	<button onclick="myFunction()">Who will present next?</button>
+	<marquee bgcolor="yellow" behavior="alternate">
+		<p id="demo"></p>
+	</marquee>
 </div>
+<!-- <input type="number" id="myNumber" /> -->
 <script>
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
